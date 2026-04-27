@@ -4,7 +4,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-*/
+
 /* main */
 html, body {
     font-family: 'Segoe UI', 'Tahoma', 'Verdana', sans-serif;
@@ -51,7 +51,13 @@ h1 {
     padding: 20px;
     text-align: center;
 }
-#navbar ul li a:hover {
+#navbar ul li a:hover,
+#navbar ul li a.current {
     background-color: #444;
     color: #f7c88a;
+}
+#navbar h1 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    float: left;    
 }
