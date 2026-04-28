@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Mountain Retreat Booking</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.4/font/bootstrap-icons.css">
+    <style>
+        body {
+            background: #f8f9fa;
+        }
+        .feature-icon {
+            width: 3rem;
+            height: 3rem;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: .75rem;
+            background: rgba(13, 110, 253, .1);
+            color: #0d6efd;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Mountain Lodge</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#components">Components</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+                <button class="btn btn-outline-light ms-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#siteMenu" aria-controls="siteMenu">
+                    <i class="bi bi-list"></i> Menu
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="siteMenu" aria-labelledby="siteMenuLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="siteMenuLabel">Book Your Escape</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <p class="text-muted">Browse cabins, amenities, and mountain getaway details.</p>
+            <div class="list-group">
+                <a href="#home" class="list-group-item list-group-item-action">Home</a>
+                <a href="#features" class="list-group-item list-group-item-action">Features</a>
+                <a href="#components" class="list-group-item list-group-item-action">Components</a>
+                <a href="#contact" class="list-group-item list-group-item-action">Contact</a>
+            </div>
+        </div>
+    </div>
+
+    <header id="home" class="bg-white py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <p class="text-uppercase text-primary fw-semibold mb-2">Book a mountain retreat</p>
+                    <h1 class="display-5 fw-bold">Find your perfect cabin in the mountains</h1>
+                    <p class="lead text-secondary">Escape to tranquil forests, cozy firelit lodges, and scenic alpine views with easy online booking.</p>
+                    <div class="d-flex flex-wrap gap-2">
+                        <a href="#features" class="btn btn-primary btn-lg">Browse Cabins</a>
+                        <a href="#contact" class="btn btn-outline-primary btn-lg">Book Now</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 mt-4 mt-lg-0">
+                    <div class="card shadow-sm border-0">
+                        <img src="../Mitmelehelineveebileht/%20img/showcase.jpg" class="card-img-top rounded-top" alt="Mountain cabin">
+                        <div class="card-body">
+                            <h5 class="card-title">Your mountain getaway</h5>
+                            <p class="card-text text-secondary">Choose from cozy cabins, luxe retreats, and family-friendly lodges close to hiking, skiing, and lakeside trails.</p>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Scenic mountain views</li>
+                                <li class="list-group-item">Fireplace cabins and hot tubs</li>
+                                <li class="list-group-item">Easy booking and flexible dates</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container my-5">
+        <section id="features" class="mb-5">
+            <div class="row g-4 text-center">
+                <div class="col-md-4">
+                    <div class="feature-icon mx-auto"><i class="bi bi-tree-fill fs-3"></i></div>
+                    <h4>Cozy Cabins</h4>
+                    <p class="text-muted">Stay in rustic cabins with warm fireplaces and scenic mountain settings.</p>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-icon mx-auto"><i class="bi bi-sun-fill fs-3"></i></div>
+                    <h4>Stunning Views</h4>
+                    <p class="text-muted">Wake up to sunrise peaks, lakeside vistas, and miles of hiking trails.</p>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-icon mx-auto"><i class="bi bi-compass-fill fs-3"></i></div>
+                    <h4>Outdoor Adventure</h4>
+                    <p class="text-muted">Explore skiing, hiking, fishing, and mountain biking right from your retreat.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="components" class="mb-5">
+            <div class="row gy-4">
+                <div class="col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Cabin Booking</h5>
+                            <p class="card-text text-secondary">Browse our curated mountain cabins and reserve your ideal stay.</p>
+                            <a href="#contact" class="btn btn-primary">Reserve Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="accordion" id="exampleAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Accordion item #1
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#exampleAccordion">
+                                <div class="accordion-body text-secondary">What to expect: cozy cabins, scenic trails, and a calm mountain atmosphere for your stay.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Accordion item #2
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#exampleAccordion">
+                                <div class="accordion-body text-secondary">Ask about check-in times, available amenities, and how to plan your outdoor excursions.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Choose Your Stay</h5>
+                            <p class="card-text text-secondary">Select from cabin types, family lodges, and luxury alpine retreats.</p>
+                            <div class="btn-group d-flex" role="group" aria-label="Button group">
+                                <button type="button" class="btn btn-outline-primary">Cabin</button>
+                                <button type="button" class="btn btn-outline-primary">Lodge</button>
+                                <button type="button" class="btn btn-outline-primary">Suite</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="row gy-4 mb-5">
+            <div class="col-md-6">
+                <div class="card shadow-sm h-100">
+                    <img src="../Mitmelehelineveebileht/%20img/photo-1.jpg" class="card-img-top rounded-top" alt="Mountain stay">
+                    <div class="card-body">
+                        <h5 class="card-title">What’s Included</h5>
+                        <p class="text-muted">Enjoy amenities designed for mountain relaxation and adventure.</p>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Hot tub & fireplace</li>
+                            <li class="list-group-item">Guided hiking trails</li>
+                            <li class="list-group-item">Breakfast and concierge</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card shadow-sm h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Dropdown Example</h5>
+                        <p class="text-muted">Bootstrap dropdowns are perfect for actions and navigation menus.</p>
+                        <div class="dropdown">
+                            <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Choose option
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Separated link</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="row gy-4 mb-5">
+            <div class="col-lg-6">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Contact Form</h5>
+                        <form>
+                            <div class="mb-3">
+                                <label for="inputName" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="inputName" placeholder="Jane Doe">
+                            </div>
+                            <div class="mb-3">
+                                <label for="inputEmail" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="inputEmail" placeholder="name@example.com">
+                            </div>
+                            <div class="mb-3">
+                                <label for="inputMessage" class="form-label">Message</label>
+                                <textarea class="form-control" id="inputMessage" rows="4"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="card shadow-sm h-100">
+                    <div class="card-body d-flex flex-column justify-content-between">
+                        <div>
+                            <h5 class="card-title">Utility Classes</h5>
+                            <p class="text-muted">Spacing, text, background, and display utilities make layouts fast and responsive.</p>
+                            <p class="mb-0"><span class="badge bg-primary">.bg-primary</span> <span class="badge bg-success">.bg-success</span> <span class="badge bg-warning text-dark">.bg-warning</span></p>
+                        </div>
+                        <div>
+                            <p class="mb-2">Inline input group:</p>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="basic-addon1">@</span>
+                                <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                            </div>
+                            <button class="btn btn-outline-secondary w-100" type="button">Secondary Action</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact" class="bg-primary text-white py-4">
+        <div class="container text-center">
+            <p class="mb-2">Ready to book your mountain retreat?</p>
+            <a href="#home" class="btn btn-light btn-lg">Start planning</a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
