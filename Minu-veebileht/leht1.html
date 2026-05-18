@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Kontakteeri meid - SPORT treeningsüsteem">
+    <title>Kontakt - SPORT</title>
+    <link rel="stylesheet" href="globals.css">
+    <link rel="stylesheet" href="styleguide.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page">
+        <!-- Navigation Header -->
+        <nav class="navigation">
+            <h1 class="nav-logo">Wr_ong</h1>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Avaleht</a>
+                <a href="leht1.html" class="nav-link active">Kontakt</a>
+                <a href="leht2.html" class="nav-link">Treeningud</a>
+                <a href="leht3.html" class="nav-link">Tellimine</a>
+                <button class="nav-button" aria-label="Menüü nupp">
+                    <span>Nupp</span>
+                </button>
+            </div>
+        </nav>
+
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="page-header-content">
+                <h1 class="page-title">Võtke meiega ühendust</h1>
+                <p class="page-subtitle">Meil on alati aeg teie küsimustele vastata</p>
+            </div>
+        </section>
+
+        <!-- Contact Content -->
+        <section class="contact-section">
+            <div class="contact-container">
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper">
+                    <h2 class="section-title">Saatke meile sõnum</h2>
+                    <form class="contact-form" action="#" method="POST">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Nimi</label>
+                            <input type="text" id="name" name="name" class="form-input" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">E-posti aadress</label>
+                            <input type="email" id="email" name="email" class="form-input" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone" class="form-label">Telefoninumber</label>
+                            <input type="tel" id="phone" name="phone" class="form-input">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject" class="form-label">Teema</label>
+                            <select id="subject" name="subject" class="form-input" required>
+                                <option>Valigu teema</option>
+                                <option>Üldine pärimine</option>
+                                <option>Tellimusega seotud</option>
+                                <option>Tehniline probleem</option>
+                                <option>Muud</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="form-label">Sõnum</label>
+                            <textarea id="message" name="message" class="form-textarea" rows="6" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-large">Saada sõnum</button>
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="contact-info-wrapper">
+                    <h2 class="section-title">Kontaktandmed</h2>
+                    <div class="contact-info-items">
+                        <div class="contact-info-item">
+                            <h3 class="info-title">Aadress</h3>
+                            <p class="info-text">Tartu maantee 123<br>10115 Tallinn<br>Eesti</p>
+                        </div>
+                        <div class="contact-info-item">
+                            <h3 class="info-title">Telefon</h3>
+                            <p class="info-text"><a href="tel:+3726123456">+372 6 123 456</a></p>
+                        </div>
+                        <div class="contact-info-item">
+                            <h3 class="info-title">E-post</h3>
+                            <p class="info-text"><a href="mailto:info@sport.ee">info@sport.ee</a></p>
+                        </div>
+                        <div class="contact-info-item">
+                            <h3 class="info-title">Tööaeg</h3>
+                            <p class="info-text">E-R: 09:00 - 18:00<br>L-P: 10:00 - 16:00<br>Pühad: suletud</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <nav class="footer-nav">
+                <div class="footer-column">
+                    <h3 class="footer-title">Navigatsioon</h3>
+                    <a href="index.html" class="footer-link">Avaleht</a>
+                    <a href="leht1.html" class="footer-link">Kontakt</a>
+                    <a href="leht2.html" class="footer-link">Treeningud</a>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-title">Teenused</h3>
+                    <a href="leht3.html" class="footer-link">Tellimine</a>
+                    <a href="#" class="footer-link">FAQ</a>
+                    <a href="#" class="footer-link">Tugiteenused</a>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-title">Seadused</h3>
+                    <a href="#" class="footer-link">Privaatsus</a>
+                    <a href="#" class="footer-link">Tingimused</a>
+                    <a href="#" class="footer-link">Küpsised</a>
+                </div>
+            </nav>
+            <div class="footer-bottom">
+                <p class="footer-text">&copy; 2024 SPORT. Kõik õigused kaitstud.</p>
+                <img class="footer-icons" src="img/pilt6.png" alt="Sotsiaalmeedia ikoonid">
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
