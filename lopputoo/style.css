@@ -399,6 +399,63 @@ body.training h2 {
 	font-size: 15px;
 }
 
+/* Areng / tellimuse vorm */
+.subscribe-box {
+	background-color: #252525;
+	border: 2px solid #444;
+	border-radius: 8px;
+	padding: 24px;
+	max-width: 720px;
+	margin: 30px auto;
+}
+.subscribe-box h2 {
+	color: #f0a500;
+	margin-top: 0;
+}
+.subscribe-box p { color: #bdb6a8; }
+.subscribe-box form { display: grid; gap: 12px; }
+.subscribe-box input[type="text"],
+.subscribe-box input[type="email"],
+.subscribe-box select {
+	padding: 10px 12px;
+	border-radius: 6px;
+	border: 1px solid #333;
+	background: #1a1a1a;
+	color: #e0d8c8;
+}
+.subscribe-box .plans { display: flex; gap: 12px; flex-wrap: wrap; }
+.plan {
+	background:#1e1e1e;
+	padding:0;
+	border-radius:8px;
+	border:1px solid #333;
+	color:#ddd;
+	overflow: hidden;
+	min-width:180px;
+}
+.plan input[type="radio"] { display: none; }
+.plan .option {
+	padding:12px 14px;
+	display:block;
+}
+.plan .title { color:#f0a500; font-weight:700; margin-bottom:6px; }
+.plan .price { font-size:20px; color:#e0d8c8; font-weight:700; }
+.plan .feat { color:#bdb6a8; font-size:13px; margin-top:8px; }
+.plan input[type="radio"]:checked + .option { background: linear-gradient(180deg,#272727,#1f1f1f); border-left:4px solid #f0a500; }
+.plan:hover { transform: translateY(-3px); transition: transform 120ms ease; }
+.subscribe-box button {
+	background-color: #f0a500;
+	color: #111;
+	padding: 10px 16px;
+	border-radius: 6px;
+	border: none;
+	font-weight: bold;
+	cursor: pointer;
+}
+.subscribe-box button:hover { background-color: #ff6b35; }
+.subscribe-note { color:#999; font-size:13px; margin-top:8px; }
+.subscribe-success { color:#7ec87e; font-weight:bold; margin-top:12px; }
+
 .day-activity {
 	color: #b0c8b0;
 	font-size: 15px;

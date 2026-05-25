@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Areng - Telli programm</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="areng">
+
+  <div class="topbar">
+    <a href="index.html">Avaleht</a>
+    <a href="training.html">Treenimine</a>
+    <a href="eating.html">Toitumine</a>
+    <a href="areng.html">Areng</a>
+  </div>
+
+  <div class="header">
+    <h1>Areng</h1>
+    <p>Telli isiklik arenguprogramm ja alusta järjepidevust täna</p>
+  </div>
+
+  <div class="content">
+
+    <div class="subscribe-box">
+      <h2>Telli arenguprogramm</h2>
+      <p>Vali sobiv plaan ja saa iganädalasi juhiseid, treeninguid ning toitumissoovitusi.</p>
+
+      <form id="subscribeForm">
+        <label>Su nimi</label>
+        <input type="text" name="name" placeholder="Eesnimi Perekonnanimi" required>
+
+        <label>E-post</label>
+        <input type="email" name="email" placeholder="sinu@epost.ee" required>
+
+        <label>Plannot</label>
+        <div class="plans">
+          <label class="plan">
+            <input type="radio" name="plan" value="algus" required>
+            <div class="option">
+              <div class="title">Algus — Nädal</div>
+              <div class="price">0€ (proov)</div>
+              <div class="feat">Lühike 7-päevane plaan: tutvustus + esimesed treeningud</div>
+            </div>
+          </label>
+          <label class="plan">
+            <input type="radio" name="plan" value="tavaline">
+            <div class="option">
+              <div class="title">Tavaline — Kuu</div>
+              <div class="price">9€ / kuu</div>
+              <div class="feat">Iganädalased treeningud, toitumisjuhised ja edusammu jälgimine</div>
+            </div>
+          </label>
+          <label class="plan">
+            <input type="radio" name="plan" value="premium">
+            <div class="option">
+              <div class="title">Täielik — Aasta</div>
+              <div class="price">79€ / aasta</div>
+              <div class="feat">Täielik programm, prioriteetne tugi ja isikustatud menüüd</div>
+            </div>
+          </label>
+        </div>
+
+        <label>Lisainfo (valikuline)</label>
+        <input type="text" name="notes" placeholder="Lühike info eesmärkide kohta">
+
+        <button type="submit">Telli</button>
+        <div class="subscribe-note">Sa saad meilile kinnitus- ja maksuinfo. Privaatsuspoliitika kehtib.</div>
+        <div id="success" class="subscribe-success" style="display:none">Aitäh! Teie tellimus on vastuvõetud.</div>
+      </form>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    <p>Fit & Feed — Areng | 2025</p>
+  </div>
+
+  <script>
+    (function(){
+      var form = document.getElementById('subscribeForm');
+      var success = document.getElementById('success');
+      var names = { algus: 'Algus — Nädal', tavaline: 'Tavaline — Kuu', premium: 'Täielik — Aasta' };
+      form.addEventListener('submit', function(e){
+        e.preventDefault();
+        var data = new FormData(form);
+        var name = (data.get('name') || '').trim();
+        var email = (data.get('email') || '').trim();
+        var plan = data.get('plan');
+        var planLabel = names[plan] || plan || '';
+        // Show friendly confirmation (client-side only).
+        success.textContent = 'Aitäh, ' + (name || 'tellija') + '! Valisite plaani: ' + planLabel + '. Kinnitus saadetakse aadressile ' + (email || '(pole e-posti)') + '.';
+        success.style.display = 'block';
+        form.reset();
+        success.scrollIntoView({behavior:'smooth', block:'center'});
+      });
+    })();
+  </script>
+
+</body>
+</html>
